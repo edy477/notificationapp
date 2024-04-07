@@ -1,4 +1,4 @@
-## Django notification system using pub an sub pattern
+## Django notification system 
 
 ### Features
 - Django DRFS
@@ -6,6 +6,7 @@
 - PostgresSQL
 - Docker
 - Signal
+- Pub/Sub Pattern
 
 
 ### Setup Docker
