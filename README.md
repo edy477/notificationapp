@@ -17,10 +17,29 @@ Install docker
 ```bash
 $ docker-compose up --build
 ```
+run the migrations
+```bash
+$ docker-compose run app  python manage.py migrate
+```
+run the seed command to create user data and notifications
+```bash
+$ docker-compose run app  python manage.py seed_data
+```
+
 
 ### Setup Application
 
-the application will run on  http://localhost:8000/api
+the application will run on:  
+http://localhost:8000/api/notifications
+and for list users
+http://localhost:8000/api/users
+
+To run the frontend:
+https://github.com/edy477/notificationapp 
+
+
+
+
 
 
 
