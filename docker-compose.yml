@@ -12,6 +12,16 @@ services:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_USER=postgres
       - PGUSER=postgres
+  test:
+    image: postgres
+    volumes:
+      - db_volume:/var/lib/postgresql/data/
+    environment:
+      - DB_PORT=5432
+      - POSTGRES_DB=test
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+      - PGUSER=postgres
 
   redis_pr:
     image: "redis:6-alpine"
@@ -36,6 +46,7 @@ services:
       - redis_pr
 
 volumes:
+  db_test:
   db_volume:
   app_volume:
   redis_pr_data:
