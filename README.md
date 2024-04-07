@@ -5,7 +5,7 @@
 - Python 3.10
 - PostgresSQL
 - Docker
-- Sinal
+- Signal
 
 
 ### Setup Docker
